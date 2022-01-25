@@ -1,10 +1,15 @@
 // The array of ingredients the user can add to a sandwich
 //  This will be updated after we fetch.
-let ingredients = [];
+const ingredientList = {
+    ingredients: [],
 
+    render() {
+        const ingredientList = document.querySelector('.ingredient-list');
+    }
+}
 // Updates the DOM to display a list of ingredients
 function renderIngredientList() {
-    const ingredientUl = document.querySelector('.ingredient-list');
+    const ingredientList = document.querySelector('.ingredient-list');
 
     // Empty the ingredientList before adding any content to it.
     ingredientUl.innerHTML = '';
@@ -59,5 +64,5 @@ function toggleIngredient(ingredient) {
     }
     saveSelectedSandwich()
     renderCart()
-    renderIngredientList()
+    ingredientList.render()
 }

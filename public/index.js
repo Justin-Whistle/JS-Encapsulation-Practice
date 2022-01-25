@@ -9,7 +9,7 @@ async function main() {
     items = fetchedCartItems
 
     // Select the first sandwich on page load
-    selectSandwich(items[0])
+    selectSandwich(items[0]);
 
     // Display the ingredients we fetched
     renderIngredientList();
